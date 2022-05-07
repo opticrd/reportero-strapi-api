@@ -6,11 +6,6 @@ module.exports =
     {       
         const { result, params  } = event;
 
-        console.log("----------------------------");
-        console.log(result);
-        console.log(params);
-        console.log("----------------------------");
-
         let author = result.createdBy;
         delete author.password;
         delete author.resetPasswordToken;
