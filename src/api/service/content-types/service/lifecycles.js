@@ -2,15 +2,11 @@
 
 module.exports = 
 { 
-    afterCreate(event) 
+    async afterCreate(event) 
     {       
         const { result, params  } = event;
 
-        let author = result.createdBy;
-        delete author.password;
-        delete author.resetPasswordToken;
-        delete author.registrationToken;
-        delete author.preferedLanguage;
+        let author = await strapi.config.helpers.removeAuthorCredentials(result.createdBy);
 
         strapi.service('api::log.log').create({
             data: {
@@ -20,7 +16,7 @@ module.exports =
                 timestamp: result.createdAt,
                 origin_id: result.id.toString(),
                 type: 'INFO',
-                author: result.createdBy,
+                author: author,
             }
         });
     },
