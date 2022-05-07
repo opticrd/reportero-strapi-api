@@ -1,6 +1,6 @@
 module.exports = 
 {
-    async removeAuthorCredentials(author) 
+    removeAuthorCredentials(author) 
     {
         delete author.password;
         delete author.resetPasswordToken;
