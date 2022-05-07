@@ -1,6 +1,6 @@
 module.exports = ({ env }) => 
 {
-  console.log(process.env);
+  //console.log(process.env);
 
   return {
     connection: {
