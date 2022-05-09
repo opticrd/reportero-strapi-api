@@ -9,8 +9,8 @@ on:
       - "**.ts*"
       - "package*.json"
       - "Dockerfile"
-      - '.github/workflows/development.yml'
-    types: [ opened, synchronize, reopened, labeled ]
+      - ".github/workflows/development.yml"
+    types: [opened, synchronize, reopened, labeled]
 
 env:
   # Deployment variables
@@ -19,7 +19,6 @@ env:
   NODE_ENV: development
   SKIP_PREFLIGHT_CHECK: true
   DISABLE_ESLINT_PLUGIN: true
-  NODE_ENV: development
 
 jobs:
   build:
@@ -60,6 +59,12 @@ jobs:
             NODE_ENV=${{ env.NODE_ENV }}
             SKIP_PREFLIGHT_CHECK=${{ env.SKIP_PREFLIGHT_CHECK }}
             DISABLE_ESLINT_PLUGIN=${{ env.DISABLE_ESLINT_PLUGIN }}
+            DATABASE_HOST=${{ secrets.DATABASE_HOST }}
+            DATABASE_PORT=${{ secrets.DATABASE_PORT }}
+            DATABASE_NAME=${{ secrets.DATABASE_NAME }}
+            DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }}
+            DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}
+            DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }}
           push: true
           cache-from: type=registry,ref=${{ env.GAR_BASE }}/${{ env.GITHUB_REPOSITORY_NAME_PART_SLUG }}:${{ env.GITHUB_HEAD_REF_SLUG || env.GITHUB_REF_SLUG }}
           cache-to: type=inline
@@ -75,12 +80,12 @@ jobs:
     steps:
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
-        
-      - id: 'auth'
-        name: 'Authenticate to Google Cloud'
-        uses: 'google-github-actions/auth@v0'
+
+      - id: "auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v0"
         with:
-          credentials_json: '${{ secrets.GAR_JSON_KEY }}'
+          credentials_json: "${{ secrets.GAR_JSON_KEY }}"
 
       - id: deploy
         uses: google-github-actions/deploy-cloudrun@v0.8.0
@@ -91,12 +96,18 @@ jobs:
           region: ${{ secrets.GCP_REGION }}
           env_vars: |
             NODE_ENV=${{ env.NODE_ENV }},
-            DB_HOST=${{ secrets.DB_HOST }},
-            DB_PORT=${{ secrets.DB_PORT }},
-            DB_DATABASE=${{ secrets.DB_DATABASE }},
-            DB_USERNAME=${{ secrets.DB_USERNAME }},
-            DB_PASSWORD=${{ secrets.DB_PASSWORD }},
-            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
+            DATABASE_HOST=${{ secrets.DATABASE_HOST }},
+            DATABASE_PORT=${{ secrets.DATABASE_PORT }},
+            DATABASE_NAME=${{ secrets.DATABASE_NAME }},
+            DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }},
+            DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }},
+            DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }},
+            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }},
+            HOST=${{ secrets.HOST }},
+            APP_KEYS=${{ secrets.APP_KEYS }},
+            API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }},
+            ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }},
+            JWT_SECRET=${{ secrets.JWT_SECRET }}
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
