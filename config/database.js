@@ -1,18 +1,13 @@
-module.exports = ({ env }) => 
-{
-  //console.log(process.env);
 
-  return {
+module.exports = ({ env }) => ({
+  connection: {
+    client: env("DATABASE_CLIENT"),
     connection: {
-      client: 'mysql',
-      connection: {
-        host: process.env['DATABASE_HOST'] || 'localhost',
-        port: process.env['DATABASE_PORT'] || 3306,
-        database: process.env['DATABASE_NAME'] || 'reportero',
-        user: process.env['DATABASE_USERNAME'] || 'root',
-        password: process.env['DATABASE_PASSWORD'] || '',
-        ssl: process.env['DATABASE_SSL'] || false,
-      },
+      host: env("DATABASE_HOST"),
+      port: env("DATABASE_PORT"),
+      database: env("DATABASE_NAME"),
+      user: env("DATABASE_USERNAME"),
+      password: env("DATABASE_PASSWORD"),
     },
-  }
-}
+  },
+});
