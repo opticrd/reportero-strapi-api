@@ -1099,6 +1099,15 @@
                                                                     "lastname": {
                                                                       "type": "string"
                                                                     },
+                                                                    "zone": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "cedula": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "phone": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -3811,6 +3820,15 @@
                                                                   "lastname": {
                                                                     "type": "string"
                                                                   },
+                                                                  "zone": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "cedula": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "phone": {
+                                                                    "type": "string"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -6445,6 +6463,15 @@
                                                                   "lastname": {
                                                                     "type": "string"
                                                                   },
+                                                                  "zone": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "cedula": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "phone": {
+                                                                    "type": "string"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -9064,6 +9091,15 @@
                                                                     "type": "string"
                                                                   },
                                                                   "lastname": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "zone": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "cedula": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "phone": {
                                                                     "type": "string"
                                                                   },
                                                                   "createdAt": {
