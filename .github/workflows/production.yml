@@ -113,7 +113,12 @@ jobs:
             DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }},
             DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }},
             DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }},
-            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
+            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }},
+            HOST=${{ secrets.HOST }},
+            APP_KEYS=${{ secrets.APP_KEYS }},
+            API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }},
+            ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }},
+            JWT_SECRET=${{ secrets.JWT_SECRET }}
 
       - name: Testing Service with curl
         run: curl "${{ steps.deploy.outputs.url }}"

@@ -9,8 +9,8 @@ on:
       - "**.ts*"
       - "package*.json"
       - "Dockerfile"
-      - '.github/workflows/development.yml'
-    types: [ opened, synchronize, reopened, labeled ]
+      - ".github/workflows/development.yml"
+    types: [opened, synchronize, reopened, labeled]
 
 env:
   # Deployment variables
@@ -80,12 +80,12 @@ jobs:
     steps:
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
-        
-      - id: 'auth'
-        name: 'Authenticate to Google Cloud'
-        uses: 'google-github-actions/auth@v0'
+
+      - id: "auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v0"
         with:
-          credentials_json: '${{ secrets.GAR_JSON_KEY }}'
+          credentials_json: "${{ secrets.GAR_JSON_KEY }}"
 
       - id: deploy
         uses: google-github-actions/deploy-cloudrun@v0.8.0
@@ -102,7 +102,12 @@ jobs:
             DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }},
             DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }},
             DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }},
-            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
+            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }},
+            HOST=${{ secrets.HOST }},
+            APP_KEYS=${{ secrets.APP_KEYS }},
+            API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }},
+            ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }},
+            JWT_SECRET=${{ secrets.JWT_SECRET }}
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
