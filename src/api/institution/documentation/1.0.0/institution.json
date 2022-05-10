@@ -1969,15 +1969,6 @@
                                               }
                                             }
                                           },
-                                          "zone": {
-                                            "type": "integer"
-                                          },
-                                          "cedula": {
-                                            "type": "integer"
-                                          },
-                                          "phone": {
-                                            "type": "integer"
-                                          },
                                           "tickets": {
                                             "type": "object",
                                             "properties": {
@@ -2384,6 +2375,12 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "firstname": {
+                                            "type": "string"
+                                          },
+                                          "lastname": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -4757,15 +4754,6 @@
                                             }
                                           }
                                         },
-                                        "zone": {
-                                          "type": "integer"
-                                        },
-                                        "cedula": {
-                                          "type": "integer"
-                                        },
-                                        "phone": {
-                                          "type": "integer"
-                                        },
                                         "tickets": {
                                           "type": "object",
                                           "properties": {
@@ -5172,6 +5160,12 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "firstname": {
+                                          "type": "string"
+                                        },
+                                        "lastname": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -7467,15 +7461,6 @@
                                             }
                                           }
                                         },
-                                        "zone": {
-                                          "type": "integer"
-                                        },
-                                        "cedula": {
-                                          "type": "integer"
-                                        },
-                                        "phone": {
-                                          "type": "integer"
-                                        },
                                         "tickets": {
                                           "type": "object",
                                           "properties": {
@@ -7882,6 +7867,12 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "firstname": {
+                                          "type": "string"
+                                        },
+                                        "lastname": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -10164,15 +10155,6 @@
                                             }
                                           }
                                         },
-                                        "zone": {
-                                          "type": "integer"
-                                        },
-                                        "cedula": {
-                                          "type": "integer"
-                                        },
-                                        "phone": {
-                                          "type": "integer"
-                                        },
                                         "tickets": {
                                           "type": "object",
                                           "properties": {
@@ -10579,6 +10561,12 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "firstname": {
+                                          "type": "string"
+                                        },
+                                        "lastname": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
