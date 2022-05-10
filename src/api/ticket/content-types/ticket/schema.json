@@ -97,7 +97,7 @@
       "target": "api::report.report",
       "mappedBy": "ticket"
     },
-    "zone": {
+    "zone_code": {
       "type": "string"
     },
     "snip_code": {

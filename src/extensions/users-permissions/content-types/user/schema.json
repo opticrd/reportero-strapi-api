@@ -111,7 +111,7 @@
     "lastname": {
       "type": "string"
     },
-    "zone": {
+    "zone_code": {
       "type": "string"
     },
     "cedula": {

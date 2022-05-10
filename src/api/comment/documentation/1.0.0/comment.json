@@ -1091,7 +1091,7 @@
                                                                   "lastname": {
                                                                     "type": "string"
                                                                   },
-                                                                  "zone": {
+                                                                  "zone_code": {
                                                                     "type": "string"
                                                                   },
                                                                   "cedula": {
@@ -2348,7 +2348,7 @@
                                               }
                                             }
                                           },
-                                          "zone": {
+                                          "zone_code": {
                                             "type": "string"
                                           },
                                           "snip_code": {
@@ -4206,7 +4206,7 @@
                                                                 "lastname": {
                                                                   "type": "string"
                                                                 },
-                                                                "zone": {
+                                                                "zone_code": {
                                                                   "type": "string"
                                                                 },
                                                                 "cedula": {
@@ -5463,7 +5463,7 @@
                                             }
                                           }
                                         },
-                                        "zone": {
+                                        "zone_code": {
                                           "type": "string"
                                         },
                                         "snip_code": {
@@ -7240,7 +7240,7 @@
                                                                 "lastname": {
                                                                   "type": "string"
                                                                 },
-                                                                "zone": {
+                                                                "zone_code": {
                                                                   "type": "string"
                                                                 },
                                                                 "cedula": {
@@ -8497,7 +8497,7 @@
                                             }
                                           }
                                         },
-                                        "zone": {
+                                        "zone_code": {
                                           "type": "string"
                                         },
                                         "snip_code": {
@@ -10264,7 +10264,7 @@
                                                                 "lastname": {
                                                                   "type": "string"
                                                                 },
-                                                                "zone": {
+                                                                "zone_code": {
                                                                   "type": "string"
                                                                 },
                                                                 "cedula": {
@@ -11521,7 +11521,7 @@
                                             }
                                           }
                                         },
-                                        "zone": {
+                                        "zone_code": {
                                           "type": "string"
                                         },
                                         "snip_code": {
