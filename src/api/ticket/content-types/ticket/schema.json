@@ -99,6 +99,9 @@
     },
     "zone": {
       "type": "string"
+    },
+    "snip_code": {
+      "type": "string"
     }
   }
 }

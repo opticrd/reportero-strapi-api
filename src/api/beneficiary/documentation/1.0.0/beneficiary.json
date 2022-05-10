@@ -2359,6 +2359,9 @@
                                             "zone": {
                                               "type": "string"
                                             },
+                                            "snip_code": {
+                                              "type": "string"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -5080,6 +5083,9 @@
                                           "zone": {
                                             "type": "string"
                                           },
+                                          "snip_code": {
+                                            "type": "string"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -7723,6 +7729,9 @@
                                           "zone": {
                                             "type": "string"
                                           },
+                                          "snip_code": {
+                                            "type": "string"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -10351,6 +10360,9 @@
                                             }
                                           },
                                           "zone": {
+                                            "type": "string"
+                                          },
+                                          "snip_code": {
                                             "type": "string"
                                           },
                                           "createdAt": {
