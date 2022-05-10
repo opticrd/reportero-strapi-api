@@ -117,10 +117,12 @@
     "cedula": {
       "type": "string",
       "maxLength": 11,
-      "regex": "^(0|[1-9][0-9]*)$"
+      "regex": "^(0|[1-9][0-9]*)$",
+      "required": true
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 10
     }
   }
 }
