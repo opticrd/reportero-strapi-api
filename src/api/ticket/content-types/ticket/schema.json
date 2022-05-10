@@ -33,9 +33,6 @@
       "target": "api::beneficiary.beneficiary",
       "inversedBy": "tickets"
     },
-    "zone": {
-      "type": "integer"
-    },
     "address": {
       "type": "text"
     },

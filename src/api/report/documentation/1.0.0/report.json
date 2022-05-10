@@ -1349,9 +1349,6 @@
                                               }
                                             }
                                           },
-                                          "zone": {
-                                            "type": "integer"
-                                          },
                                           "address": {
                                             "type": "string"
                                           },
@@ -4071,9 +4068,6 @@
                                             }
                                           }
                                         },
-                                        "zone": {
-                                          "type": "integer"
-                                        },
                                         "address": {
                                           "type": "string"
                                         },
@@ -6767,9 +6761,6 @@
                                             }
                                           }
                                         },
-                                        "zone": {
-                                          "type": "integer"
-                                        },
                                         "address": {
                                           "type": "string"
                                         },
@@ -9397,9 +9388,6 @@
                                               }
                                             }
                                           }
-                                        },
-                                        "zone": {
-                                          "type": "integer"
                                         },
                                         "address": {
                                           "type": "string"

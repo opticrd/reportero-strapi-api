@@ -810,9 +810,6 @@
                                                                         }
                                                                       }
                                                                     },
-                                                                    "zone": {
-                                                                      "type": "integer"
-                                                                    },
                                                                     "address": {
                                                                       "type": "string"
                                                                     },
@@ -2440,9 +2437,6 @@
                                   }
                                 }
                               },
-                              "zone": {
-                                "type": "integer"
-                              },
                               "address": {
                                 "type": "string"
                               },
@@ -4027,9 +4021,6 @@
                                                                       }
                                                                     }
                                                                   },
-                                                                  "zone": {
-                                                                    "type": "integer"
-                                                                  },
                                                                   "address": {
                                                                     "type": "string"
                                                                   },
@@ -5656,9 +5647,6 @@
                                   }
                                 }
                               }
-                            },
-                            "zone": {
-                              "type": "integer"
                             },
                             "address": {
                               "type": "string"
@@ -7163,9 +7151,6 @@
                                                                       }
                                                                     }
                                                                   },
-                                                                  "zone": {
-                                                                    "type": "integer"
-                                                                  },
                                                                   "address": {
                                                                     "type": "string"
                                                                   },
@@ -8792,9 +8777,6 @@
                                   }
                                 }
                               }
-                            },
-                            "zone": {
-                              "type": "integer"
                             },
                             "address": {
                               "type": "string"
@@ -10289,9 +10271,6 @@
                                                                       }
                                                                     }
                                                                   },
-                                                                  "zone": {
-                                                                    "type": "integer"
-                                                                  },
                                                                   "address": {
                                                                     "type": "string"
                                                                   },
@@ -11919,9 +11898,6 @@
                                 }
                               }
                             },
-                            "zone": {
-                              "type": "integer"
-                            },
                             "address": {
                               "type": "string"
                             },
@@ -12654,9 +12630,6 @@
                           }
                         ],
                         "example": "string or id"
-                      },
-                      "zone": {
-                        "type": "integer"
                       },
                       "address": {
                         "type": "string"
