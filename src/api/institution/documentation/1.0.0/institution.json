@@ -1835,6 +1835,9 @@
                                                                         }
                                                                       }
                                                                     },
+                                                                    "zone": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -4626,6 +4629,9 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "zone": {
+                                                                    "type": "string"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -7339,6 +7345,9 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "zone": {
+                                                                    "type": "string"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -10038,6 +10047,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "zone": {
+                                                                    "type": "string"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",

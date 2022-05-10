@@ -96,6 +96,9 @@
       "relation": "oneToMany",
       "target": "api::report.report",
       "mappedBy": "ticket"
+    },
+    "zone": {
+      "type": "string"
     }
   }
 }
