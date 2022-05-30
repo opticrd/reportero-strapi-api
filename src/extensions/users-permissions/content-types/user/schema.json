@@ -69,17 +69,6 @@
       "target": "api::institution.institution",
       "inversedBy": "members"
     },
-    "zone": {
-      "type": "integer"
-    },
-    "cedula": {
-      "type": "integer",
-      "max": 11
-    },
-    "phone": {
-      "type": "integer",
-      "max": 10
-    },
     "tickets": {
       "type": "relation",
       "relation": "oneToMany",
@@ -114,6 +103,26 @@
         "videos",
         "audios"
       ]
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "zone_code": {
+      "type": "string"
+    },
+    "cedula": {
+      "type": "string",
+      "maxLength": 11,
+      "regex": "^(0|[1-9][0-9]*)$",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 10
     }
   }
 }

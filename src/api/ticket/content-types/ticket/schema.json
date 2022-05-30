@@ -33,9 +33,6 @@
       "target": "api::beneficiary.beneficiary",
       "inversedBy": "tickets"
     },
-    "zone": {
-      "type": "integer"
-    },
     "address": {
       "type": "text"
     },
@@ -99,6 +96,12 @@
       "relation": "oneToMany",
       "target": "api::report.report",
       "mappedBy": "ticket"
+    },
+    "zone_code": {
+      "type": "string"
+    },
+    "snip_code": {
+      "type": "string"
     }
   }
 }
