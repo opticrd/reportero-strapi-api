@@ -33,7 +33,9 @@
         "incident",
         "category",
         "subcategory"
-      ]
+      ],
+      "default": "incident",
+      "required": true
     }
   }
 }
