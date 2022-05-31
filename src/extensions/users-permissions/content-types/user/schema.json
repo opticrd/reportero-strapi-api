@@ -91,7 +91,9 @@
         "provincial",
         "municipal",
         "distrital"
-      ]
+      ],
+      "default": "distrital",
+      "required": true
     },
     "profile_picture": {
       "type": "media",
@@ -112,7 +114,8 @@
       "type": "string"
     },
     "zone_code": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "cedula": {
       "type": "string",
