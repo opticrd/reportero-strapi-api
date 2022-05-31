@@ -21,7 +21,8 @@
         "DUPLICATE",
         "OTHER"
       ],
-      "default": "OTHER"
+      "default": "OTHER",
+      "required": true
     },
     "resolved": {
       "type": "boolean"
