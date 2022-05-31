@@ -34,7 +34,8 @@
       "inversedBy": "tickets"
     },
     "address": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "evidence": {
       "type": "media",
@@ -72,7 +73,9 @@
         "merged",
         "removed",
         "pending close"
-      ]
+      ],
+      "default": "new",
+      "required": true
     },
     "priority": {
       "type": "enumeration",
@@ -80,7 +83,9 @@
         "low",
         "normal",
         "high"
-      ]
+      ],
+      "default": "normal",
+      "required": true
     },
     "blocked": {
       "type": "boolean"
@@ -98,7 +103,8 @@
       "mappedBy": "ticket"
     },
     "zone_code": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "snip_code": {
       "type": "string"
