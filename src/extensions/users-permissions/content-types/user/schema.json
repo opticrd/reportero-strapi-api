@@ -82,7 +82,7 @@
       "type": "boolean",
       "default": false
     },
-    "user_type": {
+    "user_level": {
       "type": "enumeration",
       "enum": [
         "admin",

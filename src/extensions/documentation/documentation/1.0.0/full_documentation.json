@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-02T19:03:52.858Z"
+    "x-generation-date": "2022-06-02T19:05:54.274Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -832,7 +832,7 @@
                                                           "vip": {
                                                             "type": "boolean"
                                                           },
-                                                          "user_type": {
+                                                          "user_level": {
                                                             "type": "string",
                                                             "enum": [
                                                               "admin",
@@ -3314,7 +3314,7 @@
                                                         "vip": {
                                                           "type": "boolean"
                                                         },
-                                                        "user_type": {
+                                                        "user_level": {
                                                           "type": "string",
                                                           "enum": [
                                                             "admin",
@@ -5835,7 +5835,7 @@
                                                         "vip": {
                                                           "type": "boolean"
                                                         },
-                                                        "user_type": {
+                                                        "user_level": {
                                                           "type": "string",
                                                           "enum": [
                                                             "admin",
@@ -8708,7 +8708,7 @@
                                                       "vip": {
                                                         "type": "boolean"
                                                       },
-                                                      "user_type": {
+                                                      "user_level": {
                                                         "type": "string",
                                                         "enum": [
                                                           "admin",
@@ -12951,7 +12951,7 @@
                                 "vip": {
                                   "type": "boolean"
                                 },
-                                "user_type": {
+                                "user_level": {
                                   "type": "string",
                                   "enum": [
                                     "admin",
@@ -15506,7 +15506,7 @@
                               "vip": {
                                 "type": "boolean"
                               },
-                              "user_type": {
+                              "user_level": {
                                 "type": "string",
                                 "enum": [
                                   "admin",
@@ -17594,7 +17594,7 @@
                                                         "vip": {
                                                           "type": "boolean"
                                                         },
-                                                        "user_type": {
+                                                        "user_level": {
                                                           "type": "string",
                                                           "enum": [
                                                             "admin",
@@ -20077,7 +20077,7 @@
                                                       "vip": {
                                                         "type": "boolean"
                                                       },
-                                                      "user_type": {
+                                                      "user_level": {
                                                         "type": "string",
                                                         "enum": [
                                                           "admin",
@@ -24859,7 +24859,7 @@
                                             "vip": {
                                               "type": "boolean"
                                             },
-                                            "user_type": {
+                                            "user_level": {
                                               "type": "string",
                                               "enum": [
                                                 "admin",
@@ -27840,7 +27840,7 @@
                                           "vip": {
                                             "type": "boolean"
                                           },
-                                          "user_type": {
+                                          "user_level": {
                                             "type": "string",
                                             "enum": [
                                               "admin",
@@ -31702,7 +31702,7 @@
                                               "vip": {
                                                 "type": "boolean"
                                               },
-                                              "user_type": {
+                                              "user_level": {
                                                 "type": "string",
                                                 "enum": [
                                                   "admin",
@@ -34171,7 +34171,7 @@
                                             "vip": {
                                               "type": "boolean"
                                             },
-                                            "user_type": {
+                                            "user_level": {
                                               "type": "string",
                                               "enum": [
                                                 "admin",
@@ -36634,7 +36634,7 @@
                                                             "vip": {
                                                               "type": "boolean"
                                                             },
-                                                            "user_type": {
+                                                            "user_level": {
                                                               "type": "string",
                                                               "enum": [
                                                                 "admin",
@@ -39132,7 +39132,7 @@
                                                           "vip": {
                                                             "type": "boolean"
                                                           },
-                                                          "user_type": {
+                                                          "user_level": {
                                                             "type": "string",
                                                             "enum": [
                                                               "admin",
@@ -39755,7 +39755,7 @@
             "required": [
               "username",
               "email",
-              "user_type",
+              "user_level",
               "firstname",
               "zone_code",
               "cedula"
@@ -39831,7 +39831,7 @@
               "vip": {
                 "type": "boolean"
               },
-              "user_type": {
+              "user_level": {
                 "type": "string",
                 "enum": [
                   "admin",
@@ -41797,7 +41797,7 @@
                                               "vip": {
                                                 "type": "boolean"
                                               },
-                                              "user_type": {
+                                              "user_level": {
                                                 "type": "string",
                                                 "enum": [
                                                   "admin",
@@ -42333,7 +42333,7 @@
                     "vip": {
                       "type": "boolean"
                     },
-                    "user_type": {
+                    "user_level": {
                       "type": "string",
                       "enum": [
                         "admin",
@@ -44724,7 +44724,7 @@
                                             "vip": {
                                               "type": "boolean"
                                             },
-                                            "user_type": {
+                                            "user_level": {
                                               "type": "string",
                                               "enum": [
                                                 "admin",
@@ -45260,7 +45260,7 @@
                   "vip": {
                     "type": "boolean"
                   },
-                  "user_type": {
+                  "user_level": {
                     "type": "string",
                     "enum": [
                       "admin",
