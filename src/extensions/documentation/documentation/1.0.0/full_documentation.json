@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-02T19:05:54.274Z"
+    "x-generation-date": "2022-06-07T17:12:14.572Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -223,7 +223,7 @@
                                                 "type": {
                                                   "type": "string",
                                                   "enum": [
-                                                    "incident",
+                                                    "service",
                                                     "category",
                                                     "subcategory"
                                                   ]
@@ -2705,7 +2705,7 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "incident",
+                                                  "service",
                                                   "category",
                                                   "subcategory"
                                                 ]
@@ -5226,7 +5226,7 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "incident",
+                                                  "service",
                                                   "category",
                                                   "subcategory"
                                                 ]
@@ -8099,7 +8099,7 @@
                                             "type": {
                                               "type": "string",
                                               "enum": [
-                                                "incident",
+                                                "service",
                                                 "category",
                                                 "subcategory"
                                               ]
@@ -11049,7 +11049,7 @@
                                   "type": {
                                     "type": "string",
                                     "enum": [
-                                      "incident",
+                                      "service",
                                       "category",
                                       "subcategory"
                                     ]
@@ -13604,7 +13604,7 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "incident",
+                                    "service",
                                     "category",
                                     "subcategory"
                                   ]
@@ -16985,7 +16985,7 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "incident",
+                                                  "service",
                                                   "category",
                                                   "subcategory"
                                                 ]
@@ -19468,7 +19468,7 @@
                                             "type": {
                                               "type": "string",
                                               "enum": [
-                                                "incident",
+                                                "service",
                                                 "category",
                                                 "subcategory"
                                               ]
@@ -21877,7 +21877,7 @@
               "type": {
                 "type": "string",
                 "enum": [
-                  "incident",
+                  "service",
                   "category",
                   "subcategory"
                 ]
@@ -21957,7 +21957,7 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "incident",
+                                    "service",
                                     "category",
                                     "subcategory"
                                   ]
@@ -22288,7 +22288,7 @@
                     "type": {
                       "type": "string",
                       "enum": [
-                        "incident",
+                        "service",
                         "category",
                         "subcategory"
                       ]
@@ -22438,7 +22438,7 @@
                               "type": {
                                 "type": "string",
                                 "enum": [
-                                  "incident",
+                                  "service",
                                   "category",
                                   "subcategory"
                                 ]
@@ -22769,7 +22769,7 @@
                   "type": {
                     "type": "string",
                     "enum": [
-                      "incident",
+                      "service",
                       "category",
                       "subcategory"
                     ]
@@ -23055,7 +23055,7 @@
                                   "type": {
                                     "type": "string",
                                     "enum": [
-                                      "incident",
+                                      "service",
                                       "category",
                                       "subcategory"
                                     ]
@@ -26036,7 +26036,7 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "incident",
+                                    "service",
                                     "category",
                                     "subcategory"
                                   ]
@@ -30308,7 +30308,7 @@
                                                                         "type": {
                                                                           "type": "string",
                                                                           "enum": [
-                                                                            "incident",
+                                                                            "service",
                                                                             "category",
                                                                             "subcategory"
                                                                           ]
@@ -32777,7 +32777,7 @@
                                                                       "type": {
                                                                         "type": "string",
                                                                         "enum": [
-                                                                          "incident",
+                                                                          "service",
                                                                           "category",
                                                                           "subcategory"
                                                                         ]
@@ -34989,7 +34989,7 @@
                                                                                       "type": {
                                                                                         "type": "string",
                                                                                         "enum": [
-                                                                                          "incident",
+                                                                                          "service",
                                                                                           "category",
                                                                                           "subcategory"
                                                                                         ]
@@ -37487,7 +37487,7 @@
                                                                                     "type": {
                                                                                       "type": "string",
                                                                                       "enum": [
-                                                                                        "incident",
+                                                                                        "service",
                                                                                         "category",
                                                                                         "subcategory"
                                                                                       ]
@@ -40403,7 +40403,7 @@
                                                                         "type": {
                                                                           "type": "string",
                                                                           "enum": [
-                                                                            "incident",
+                                                                            "service",
                                                                             "category",
                                                                             "subcategory"
                                                                           ]
@@ -43330,7 +43330,7 @@
                                                                       "type": {
                                                                         "type": "string",
                                                                         "enum": [
-                                                                          "incident",
+                                                                          "service",
                                                                           "category",
                                                                           "subcategory"
                                                                         ]
