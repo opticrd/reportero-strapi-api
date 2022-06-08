@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-07T17:12:14.572Z"
+    "x-generation-date": "2022-06-08T01:43:08.593Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -122,6 +122,10 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "email": {
+                "type": "string",
+                "format": "email"
               }
             }
           }
@@ -1415,6 +1419,10 @@
                                                   }
                                                 }
                                               },
+                                              "email": {
+                                                "type": "string",
+                                                "format": "email"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -2534,6 +2542,10 @@
                           }
                         }
                       }
+                    },
+                    "email": {
+                      "type": "string",
+                      "format": "email"
                     },
                     "createdAt": {
                       "type": "string",
@@ -3897,6 +3909,10 @@
                                                 }
                                               }
                                             },
+                                            "email": {
+                                              "type": "string",
+                                              "format": "email"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -5016,6 +5032,10 @@
                         }
                       }
                     }
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
                   },
                   "createdAt": {
                     "type": "string",
@@ -6417,6 +6437,10 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "email": {
+                                              "type": "string",
+                                              "format": "email"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -9291,6 +9315,10 @@
                                               }
                                             }
                                           },
+                                          "email": {
+                                            "type": "string",
+                                            "format": "email"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -11726,6 +11754,10 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "email": {
+                                                                        "type": "string",
+                                                                        "format": "email"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -14281,6 +14313,10 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "email": {
+                                                                      "type": "string",
+                                                                      "format": "email"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -18177,6 +18213,10 @@
                                                 }
                                               }
                                             },
+                                            "email": {
+                                              "type": "string",
+                                              "format": "email"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -20659,6 +20699,10 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "email": {
+                                            "type": "string",
+                                            "format": "email"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -23733,6 +23777,10 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "email": {
+                                                                        "type": "string",
+                                                                        "format": "email"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -26713,6 +26761,10 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "email": {
+                                                                      "type": "string",
+                                                                      "format": "email"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -30478,6 +30530,10 @@
                                                                                         }
                                                                                       }
                                                                                     },
+                                                                                    "email": {
+                                                                                      "type": "string",
+                                                                                      "format": "email"
+                                                                                    },
                                                                                     "createdAt": {
                                                                                       "type": "string",
                                                                                       "format": "date-time"
@@ -32947,6 +33003,10 @@
                                                                                       }
                                                                                     }
                                                                                   },
+                                                                                  "email": {
+                                                                                    "type": "string",
+                                                                                    "format": "email"
+                                                                                  },
                                                                                   "createdAt": {
                                                                                     "type": "string",
                                                                                     "format": "date-time"
@@ -35409,6 +35469,10 @@
                                                                                                         }
                                                                                                       }
                                                                                                     }
+                                                                                                  },
+                                                                                                  "email": {
+                                                                                                    "type": "string",
+                                                                                                    "format": "email"
                                                                                                   },
                                                                                                   "createdAt": {
                                                                                                     "type": "string",
@@ -37907,6 +37971,10 @@
                                                                                                       }
                                                                                                     }
                                                                                                   }
+                                                                                                },
+                                                                                                "email": {
+                                                                                                  "type": "string",
+                                                                                                  "format": "email"
                                                                                                 },
                                                                                                 "createdAt": {
                                                                                                   "type": "string",
@@ -40572,6 +40640,10 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "email": {
+                                                                                      "type": "string",
+                                                                                      "format": "email"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -43499,6 +43571,10 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "email": {
+                                                                                    "type": "string",
+                                                                                    "format": "email"
                                                                                   },
                                                                                   "createdAt": {
                                                                                     "type": "string",

@@ -31,6 +31,9 @@
       "relation": "oneToMany",
       "target": "api::ticket.ticket",
       "mappedBy": "beneficiary"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
