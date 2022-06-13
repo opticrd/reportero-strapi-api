@@ -2,6 +2,11 @@ module.exports =
 {
     removeAuthorCredentials(author) 
     {
+        if(author == undefined) 
+        {
+            return null;
+        }
+
         delete author.password;
         delete author.resetPasswordToken;
         delete author.registrationToken;
