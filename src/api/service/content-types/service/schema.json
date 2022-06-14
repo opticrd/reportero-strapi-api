@@ -36,6 +36,11 @@
       ],
       "default": "service",
       "required": true
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "required": false
     }
   }
 }

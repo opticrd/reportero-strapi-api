@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-13T14:36:38.891Z"
+    "x-generation-date": "2022-06-14T14:30:39.985Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -231,6 +231,9 @@
                                                     "category",
                                                     "subcategory"
                                                   ]
+                                                },
+                                                "is_active": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -2721,6 +2724,9 @@
                                                   "category",
                                                   "subcategory"
                                                 ]
+                                              },
+                                              "is_active": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -5250,6 +5256,9 @@
                                                   "category",
                                                   "subcategory"
                                                 ]
+                                              },
+                                              "is_active": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -8127,6 +8136,9 @@
                                                 "category",
                                                 "subcategory"
                                               ]
+                                            },
+                                            "is_active": {
+                                              "type": "boolean"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -11082,6 +11094,9 @@
                                       "subcategory"
                                     ]
                                   },
+                                  "is_active": {
+                                    "type": "boolean"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -13640,6 +13655,9 @@
                                     "category",
                                     "subcategory"
                                   ]
+                                },
+                                "is_active": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -17026,6 +17044,9 @@
                                                   "subcategory"
                                                 ]
                                               },
+                                              "is_active": {
+                                                "type": "boolean"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -19513,6 +19534,9 @@
                                                 "subcategory"
                                               ]
                                             },
+                                            "is_active": {
+                                              "type": "boolean"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -21925,6 +21949,9 @@
                   "category",
                   "subcategory"
                 ]
+              },
+              "is_active": {
+                "type": "boolean"
               }
             }
           }
@@ -22005,6 +22032,9 @@
                                     "category",
                                     "subcategory"
                                   ]
+                                },
+                                "is_active": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -22337,6 +22367,9 @@
                         "subcategory"
                       ]
                     },
+                    "is_active": {
+                      "type": "boolean"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -22486,6 +22519,9 @@
                                   "category",
                                   "subcategory"
                                 ]
+                              },
+                              "is_active": {
+                                "type": "boolean"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -22818,6 +22854,9 @@
                       "subcategory"
                     ]
                   },
+                  "is_active": {
+                    "type": "boolean"
+                  },
                   "createdAt": {
                     "type": "string",
                     "format": "date-time"
@@ -23103,6 +23142,9 @@
                                       "category",
                                       "subcategory"
                                     ]
+                                  },
+                                  "is_active": {
+                                    "type": "boolean"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -26088,6 +26130,9 @@
                                     "category",
                                     "subcategory"
                                   ]
+                                },
+                                "is_active": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -30365,6 +30410,9 @@
                                                                             "subcategory"
                                                                           ]
                                                                         },
+                                                                        "is_active": {
+                                                                          "type": "boolean"
+                                                                        },
                                                                         "createdAt": {
                                                                           "type": "string",
                                                                           "format": "date-time"
@@ -32838,6 +32886,9 @@
                                                                           "subcategory"
                                                                         ]
                                                                       },
+                                                                      "is_active": {
+                                                                        "type": "boolean"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -35053,6 +35104,9 @@
                                                                                           "category",
                                                                                           "subcategory"
                                                                                         ]
+                                                                                      },
+                                                                                      "is_active": {
+                                                                                        "type": "boolean"
                                                                                       },
                                                                                       "createdAt": {
                                                                                         "type": "string",
@@ -37555,6 +37609,9 @@
                                                                                         "category",
                                                                                         "subcategory"
                                                                                       ]
+                                                                                    },
+                                                                                    "is_active": {
+                                                                                      "type": "boolean"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -40475,6 +40532,9 @@
                                                                             "category",
                                                                             "subcategory"
                                                                           ]
+                                                                        },
+                                                                        "is_active": {
+                                                                          "type": "boolean"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -43406,6 +43466,9 @@
                                                                           "category",
                                                                           "subcategory"
                                                                         ]
+                                                                      },
+                                                                      "is_active": {
+                                                                        "type": "boolean"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
