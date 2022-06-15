@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-14T17:26:21.905Z"
+    "x-generation-date": "2022-06-15T12:36:39.164Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2433,6 +2433,9 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "other_reason": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -4926,6 +4929,9 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "other_reason": {
+                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -7458,6 +7464,9 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "other_reason": {
+                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -10339,6 +10348,9 @@
                                                 }
                                               }
                                             },
+                                            "other_reason": {
+                                              "type": "string"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -12781,6 +12793,9 @@
                                                                               }
                                                                             }
                                                                           }
+                                                                        },
+                                                                        "other_reason": {
+                                                                          "type": "string"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -15344,6 +15359,9 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "other_reason": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -16936,6 +16954,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "other_reason": {
+                "type": "string"
               }
             }
           }
@@ -19246,6 +19267,9 @@
                                                   }
                                                 }
                                               },
+                                              "other_reason": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -19356,6 +19380,9 @@
                           }
                         }
                       }
+                    },
+                    "other_reason": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -21736,6 +21763,9 @@
                                                 }
                                               }
                                             },
+                                            "other_reason": {
+                                              "type": "string"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -21846,6 +21876,9 @@
                         }
                       }
                     }
+                  },
+                  "other_reason": {
+                    "type": "string"
                   },
                   "createdAt": {
                     "type": "string",
@@ -24830,6 +24863,9 @@
                                                                               }
                                                                             }
                                                                           }
+                                                                        },
+                                                                        "other_reason": {
+                                                                          "type": "string"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -27818,6 +27854,9 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "other_reason": {
+                                                                        "type": "string"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -31590,6 +31629,9 @@
                                                                                           }
                                                                                         }
                                                                                       },
+                                                                                      "other_reason": {
+                                                                                        "type": "string"
+                                                                                      },
                                                                                       "createdAt": {
                                                                                         "type": "string",
                                                                                         "format": "date-time"
@@ -34066,6 +34108,9 @@
                                                                                         }
                                                                                       }
                                                                                     },
+                                                                                    "other_reason": {
+                                                                                      "type": "string"
+                                                                                    },
                                                                                     "createdAt": {
                                                                                       "type": "string",
                                                                                       "format": "date-time"
@@ -36535,6 +36580,9 @@
                                                                                                           }
                                                                                                         }
                                                                                                       }
+                                                                                                    },
+                                                                                                    "other_reason": {
+                                                                                                      "type": "string"
                                                                                                     },
                                                                                                     "createdAt": {
                                                                                                       "type": "string",
@@ -39040,6 +39088,9 @@
                                                                                                         }
                                                                                                       }
                                                                                                     }
+                                                                                                  },
+                                                                                                  "other_reason": {
+                                                                                                    "type": "string"
                                                                                                   },
                                                                                                   "createdAt": {
                                                                                                     "type": "string",
@@ -41712,6 +41763,9 @@
                                                                                             }
                                                                                           }
                                                                                         }
+                                                                                      },
+                                                                                      "other_reason": {
+                                                                                        "type": "string"
                                                                                       },
                                                                                       "createdAt": {
                                                                                         "type": "string",
@@ -44646,6 +44700,9 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "other_reason": {
+                                                                                      "type": "string"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
