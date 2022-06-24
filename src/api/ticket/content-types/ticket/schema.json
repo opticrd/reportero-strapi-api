@@ -88,10 +88,12 @@
       "required": true
     },
     "blocked": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "blocked_comments": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "block_reason": {
       "type": "text"
