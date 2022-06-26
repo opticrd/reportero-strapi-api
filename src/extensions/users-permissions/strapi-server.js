@@ -22,9 +22,17 @@ module.exports = (plugin) =>
             {
                 try {
                     
+                    if(!data.hasOwnProperty('cedula')){
+                        errors.push({ 
+                            username: data.username,
+                            message: 'The cedula is not set',
+                        });
+                        return null;
+                    }
+
                     if(!data.hasOwnProperty('institution')){
                         errors.push({ 
-                            title: data.title,
+                            cedula: data.cedula,
                             message: 'The institution is not set',
                         });
                         return null;
@@ -34,7 +42,7 @@ module.exports = (plugin) =>
                     
                     if(institution === null){
                         errors.push({ 
-                            title: data.title,
+                            cedula: data.cedula,
                             message: 'The institution doesnt exists',
                         });
                         return null;
@@ -47,12 +55,7 @@ module.exports = (plugin) =>
                 } catch (err) {
                     console.log(err.details);
                     
-                    // errors.push({ 
-                    //     title: data.title,
-                    //     message: 'The model is not valid',
-                    // });
-                    //Array.prototype.push.apply(errors, err.details.errors);
-                    errors.push(err.details.errors);
+                    errors.push({ cedula: data.cedula, errors: err.details.errors});
                     return null;
                 }
             }));
