@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-26T18:19:17.931Z"
+    "x-generation-date": "2022-06-27T13:41:45.916Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2366,11 +2366,11 @@
                                     "enum": [
                                       "new",
                                       "open",
-                                      "pending reminder",
+                                      "pending_reminder",
                                       "closed",
                                       "merged",
                                       "removed",
-                                      "pending close"
+                                      "pending_close"
                                     ]
                                   },
                                   "priority": {
@@ -4862,11 +4862,11 @@
                                   "enum": [
                                     "new",
                                     "open",
-                                    "pending reminder",
+                                    "pending_reminder",
                                     "closed",
                                     "merged",
                                     "removed",
-                                    "pending close"
+                                    "pending_close"
                                   ]
                                 },
                                 "priority": {
@@ -7397,11 +7397,11 @@
                                   "enum": [
                                     "new",
                                     "open",
-                                    "pending reminder",
+                                    "pending_reminder",
                                     "closed",
                                     "merged",
                                     "removed",
-                                    "pending close"
+                                    "pending_close"
                                   ]
                                 },
                                 "priority": {
@@ -10280,11 +10280,11 @@
                                 "enum": [
                                   "new",
                                   "open",
-                                  "pending reminder",
+                                  "pending_reminder",
                                   "closed",
                                   "merged",
                                   "removed",
-                                  "pending close"
+                                  "pending_close"
                                 ]
                               },
                               "priority": {
@@ -12726,11 +12726,11 @@
                                                             "enum": [
                                                               "new",
                                                               "open",
-                                                              "pending reminder",
+                                                              "pending_reminder",
                                                               "closed",
                                                               "merged",
                                                               "removed",
-                                                              "pending close"
+                                                              "pending_close"
                                                             ]
                                                           },
                                                           "priority": {
@@ -15291,11 +15291,11 @@
                                                           "enum": [
                                                             "new",
                                                             "open",
-                                                            "pending reminder",
+                                                            "pending_reminder",
                                                             "closed",
                                                             "merged",
                                                             "removed",
-                                                            "pending close"
+                                                            "pending_close"
                                                           ]
                                                         },
                                                         "priority": {
@@ -19199,11 +19199,11 @@
                                   "enum": [
                                     "new",
                                     "open",
-                                    "pending reminder",
+                                    "pending_reminder",
                                     "closed",
                                     "merged",
                                     "removed",
-                                    "pending close"
+                                    "pending_close"
                                   ]
                                 },
                                 "priority": {
@@ -21695,11 +21695,11 @@
                                 "enum": [
                                   "new",
                                   "open",
-                                  "pending reminder",
+                                  "pending_reminder",
                                   "closed",
                                   "merged",
                                   "removed",
-                                  "pending close"
+                                  "pending_close"
                                 ]
                               },
                               "priority": {
@@ -23050,11 +23050,11 @@
                 "enum": [
                   "new",
                   "open",
-                  "pending reminder",
+                  "pending_reminder",
                   "closed",
                   "merged",
                   "removed",
-                  "pending close"
+                  "pending_close"
                 ]
               },
               "priority": {
@@ -24796,11 +24796,11 @@
                                                             "enum": [
                                                               "new",
                                                               "open",
-                                                              "pending reminder",
+                                                              "pending_reminder",
                                                               "closed",
                                                               "merged",
                                                               "removed",
-                                                              "pending close"
+                                                              "pending_close"
                                                             ]
                                                           },
                                                           "priority": {
@@ -25965,11 +25965,11 @@
                       "enum": [
                         "new",
                         "open",
-                        "pending reminder",
+                        "pending_reminder",
                         "closed",
                         "merged",
                         "removed",
-                        "pending close"
+                        "pending_close"
                       ]
                     },
                     "priority": {
@@ -27787,11 +27787,11 @@
                                                           "enum": [
                                                             "new",
                                                             "open",
-                                                            "pending reminder",
+                                                            "pending_reminder",
                                                             "closed",
                                                             "merged",
                                                             "removed",
-                                                            "pending close"
+                                                            "pending_close"
                                                           ]
                                                         },
                                                         "priority": {
@@ -28956,11 +28956,11 @@
                     "enum": [
                       "new",
                       "open",
-                      "pending reminder",
+                      "pending_reminder",
                       "closed",
                       "merged",
                       "removed",
-                      "pending close"
+                      "pending_close"
                     ]
                   },
                   "priority": {
@@ -31561,11 +31561,11 @@
                                                                           "enum": [
                                                                             "new",
                                                                             "open",
-                                                                            "pending reminder",
+                                                                            "pending_reminder",
                                                                             "closed",
                                                                             "merged",
                                                                             "removed",
-                                                                            "pending close"
+                                                                            "pending_close"
                                                                           ]
                                                                         },
                                                                         "priority": {
@@ -34040,11 +34040,11 @@
                                                                         "enum": [
                                                                           "new",
                                                                           "open",
-                                                                          "pending reminder",
+                                                                          "pending_reminder",
                                                                           "closed",
                                                                           "merged",
                                                                           "removed",
-                                                                          "pending close"
+                                                                          "pending_close"
                                                                         ]
                                                                       },
                                                                       "priority": {
@@ -36513,11 +36513,11 @@
                                                                                         "enum": [
                                                                                           "new",
                                                                                           "open",
-                                                                                          "pending reminder",
+                                                                                          "pending_reminder",
                                                                                           "closed",
                                                                                           "merged",
                                                                                           "removed",
-                                                                                          "pending close"
+                                                                                          "pending_close"
                                                                                         ]
                                                                                       },
                                                                                       "priority": {
@@ -39021,11 +39021,11 @@
                                                                                       "enum": [
                                                                                         "new",
                                                                                         "open",
-                                                                                        "pending reminder",
+                                                                                        "pending_reminder",
                                                                                         "closed",
                                                                                         "merged",
                                                                                         "removed",
-                                                                                        "pending close"
+                                                                                        "pending_close"
                                                                                       ]
                                                                                     },
                                                                                     "priority": {
@@ -41696,11 +41696,11 @@
                                                                           "enum": [
                                                                             "new",
                                                                             "open",
-                                                                            "pending reminder",
+                                                                            "pending_reminder",
                                                                             "closed",
                                                                             "merged",
                                                                             "removed",
-                                                                            "pending close"
+                                                                            "pending_close"
                                                                           ]
                                                                         },
                                                                         "priority": {
@@ -44633,11 +44633,11 @@
                                                                         "enum": [
                                                                           "new",
                                                                           "open",
-                                                                          "pending reminder",
+                                                                          "pending_reminder",
                                                                           "closed",
                                                                           "merged",
                                                                           "removed",
-                                                                          "pending close"
+                                                                          "pending_close"
                                                                         ]
                                                                       },
                                                                       "priority": {
