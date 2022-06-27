@@ -3,7 +3,7 @@ FROM node:16 as release
 # Installing libvips-dev for sharp compatability
 RUN apt-get update -qq && apt-get install -y libvips-dev
 
-ARG NODE_ENV=production
+ARG NODE_ENV=development
 ARG DATABASE_PORT
 ARG DATABASE_NAME
 ARG DATABASE_USERNAME
