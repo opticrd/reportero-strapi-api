@@ -68,11 +68,11 @@
       "enum": [
         "new",
         "open",
-        "pending reminder",
+        "pending_reminder",
         "closed",
         "merged",
         "removed",
-        "pending close"
+        "pending_close"
       ],
       "default": "new",
       "required": true
