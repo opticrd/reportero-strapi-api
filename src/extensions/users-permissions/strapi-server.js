@@ -75,6 +75,23 @@ module.exports = (plugin) =>
 
         throw new ValidationError("Data format is not correct. We are expecting an array of objects");       
     };
+
+    plugin.controllers.auth.refreshToken = async (ctx) => 
+    {
+        // refresh userself token
+        const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
+          id: ctx.state.user.id
+        })
+        return { jwt: newJwt }
+    
+        // comment out next lines, and refresh the request body's token like {token: 'xxx'}
+        // const { token } = ctx.request.body
+        // const payload = strapi.plugins['users-permissions'].services.jwt.verify(token)
+        // const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
+        // 	id: payload.id
+        // })
+        // return {jwt: newJwt}
+    }
   
     plugin.routes['content-api'].routes.push({
       method: 'POST',
@@ -83,6 +100,14 @@ module.exports = (plugin) =>
       config: {
           prefix: ''
       }
+    },
+    {
+        method: 'POST',
+        path: '/auth/refreshToken',
+        handler: 'auth.refreshToken',
+        config: {
+          prefix: ''
+        }
     });
     
     return plugin;
