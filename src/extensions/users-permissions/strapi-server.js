@@ -78,11 +78,11 @@ module.exports = (plugin) =>
 
     plugin.controllers.auth.refreshToken = async (ctx) => 
     {
-        // refresh userself token
-        const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
-          id: ctx.state.user.id
-        })
-        return { jwt: newJwt }
+        // refresh userself token (basic)
+        // const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
+        //   id: ctx.state.user.id
+        // })
+        // return { jwt: newJwt }
     
         // comment out next lines, and refresh the request body's token like {token: 'xxx'}
         // const { token } = ctx.request.body
@@ -91,6 +91,18 @@ module.exports = (plugin) =>
         // 	id: payload.id
         // })
         // return {jwt: newJwt}
+
+        // refresh userself token with verification
+        const payload = await strapi.plugins['users-permissions'].services.jwt.verify(ctx.request.body.token)
+            .catch(error => { 
+                //console.log(error.message)
+                return {jwt: strapi.plugins['users-permissions'].services.jwt.issue({
+                    id: ctx.request.body.id
+                })}
+            });
+
+		//console.log(payload)
+		return {jwt: payload.jwt}
     }
   
     plugin.routes['content-api'].routes.push({
