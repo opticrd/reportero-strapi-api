@@ -95,14 +95,20 @@ module.exports = (plugin) =>
         // refresh userself token with verification
         const payload = await strapi.plugins['users-permissions'].services.jwt.verify(ctx.request.body.token)
             .catch(error => { 
-                //console.log(error.message)
+                //console.log('error: ' + error.message);
                 return {jwt: strapi.plugins['users-permissions'].services.jwt.issue({
-                    id: ctx.request.body.id
+                    id: ctx.state.user.id
                 })}
             });
 
-		//console.log(payload)
-		return {jwt: payload.jwt}
+		console.log(payload);
+
+        if (typeof payload.jwt === 'undefined') {
+            payload.jwt = ctx.request.body.token;
+        }
+        
+        //const sanitizedEntity = await sanitize.contentAPI.output(payload);
+		return { jwt: payload.jwt };
     }
   
     plugin.routes['content-api'].routes.push({
