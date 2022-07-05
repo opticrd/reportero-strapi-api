@@ -4,7 +4,7 @@ FROM node:16 as release
 RUN apt-get update -qq && apt-get install -y libvips-dev
 # RUN yarn add @strapi-community/strapi-provider-upload-google-cloud-storage
 
-ARG NODE_ENV=development
+ARG NODE_ENV=production
 ARG DATABASE_PORT
 ARG DATABASE_NAME
 ARG DATABASE_USERNAME
