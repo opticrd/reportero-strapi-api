@@ -96,12 +96,13 @@ module.exports = (plugin) =>
         const payload = await strapi.plugins['users-permissions'].services.jwt.verify(ctx.request.body.token)
             .catch(error => { 
                 //console.log('error: ' + error.message);
+                //console.log('id: ' + ctx.state.user.id);
                 return {jwt: strapi.plugins['users-permissions'].services.jwt.issue({
                     id: ctx.state.user.id
                 })}
             });
 
-		console.log(payload);
+		//console.log(payload);
 
         if (typeof payload.jwt === 'undefined') {
             payload.jwt = ctx.request.body.token;
