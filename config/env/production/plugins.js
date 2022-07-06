@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
       providerOptions: {
         serviceAccount: env.json('GCS_SERVICE_ACCOUNT'),
         bucketName: env('GOOGLE_BUCKET_NAME'),
-        baseUrl: env('GCS_BASE_URL'),
+        //baseUrl: env('GCS_BASE_URL'),
       },
     },
   },
