@@ -82,7 +82,7 @@
       "type": "boolean",
       "default": false
     },
-    "user_type": {
+    "user_level": {
       "type": "enumeration",
       "enum": [
         "admin",
@@ -91,7 +91,9 @@
         "provincial",
         "municipal",
         "distrital"
-      ]
+      ],
+      "default": "distrital",
+      "required": true
     },
     "profile_picture": {
       "type": "media",
@@ -112,12 +114,12 @@
       "type": "string"
     },
     "zone_code": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "cedula": {
       "type": "string",
       "maxLength": 11,
-      "regex": "^(0|[1-9][0-9]*)$",
       "required": true
     },
     "phone": {

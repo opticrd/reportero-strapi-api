@@ -48,7 +48,8 @@
         "text/plain",
         "text/html"
       ],
-      "default": "text/plain"
+      "default": "text/plain",
+      "required": true
     }
   }
 }

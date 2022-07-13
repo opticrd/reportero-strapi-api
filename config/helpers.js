@@ -2,6 +2,11 @@ module.exports =
 {
     removeAuthorCredentials(author) 
     {
+        if(author == undefined) 
+        {
+            return null;
+        }
+
         delete author.password;
         delete author.resetPasswordToken;
         delete author.registrationToken;
@@ -12,8 +17,14 @@ module.exports =
     logActivity(event, action, type = 'INFO') 
     {
         const { result, params, model  } = event;
+        let authorTemp;
 
-        let author = strapi.config.helpers.removeAuthorCredentials(result.updatedBy);
+        if(action === 'CREATE')
+            authorTemp = result.createdBy;
+        else
+            authorTemp = result.updatedBy;
+
+        let author = strapi.config.helpers.removeAuthorCredentials(authorTemp);
 
         strapi.service('api::log.log').create({
             data: {

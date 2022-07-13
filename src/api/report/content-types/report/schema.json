@@ -21,7 +21,8 @@
         "DUPLICATE",
         "OTHER"
       ],
-      "default": "OTHER"
+      "default": "OTHER",
+      "required": true
     },
     "resolved": {
       "type": "boolean"
@@ -31,6 +32,9 @@
       "relation": "manyToOne",
       "target": "api::ticket.ticket",
       "inversedBy": "reports"
+    },
+    "other_reason": {
+      "type": "string"
     }
   }
 }

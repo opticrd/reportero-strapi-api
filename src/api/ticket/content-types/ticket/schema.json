@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
@@ -34,7 +34,8 @@
       "inversedBy": "tickets"
     },
     "address": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "evidence": {
       "type": "media",
@@ -67,12 +68,14 @@
       "enum": [
         "new",
         "open",
-        "pending reminder",
+        "pending_reminder",
         "closed",
         "merged",
         "removed",
-        "pending close"
-      ]
+        "pending_close"
+      ],
+      "default": "new",
+      "required": true
     },
     "priority": {
       "type": "enumeration",
@@ -80,13 +83,17 @@
         "low",
         "normal",
         "high"
-      ]
+      ],
+      "default": "normal",
+      "required": true
     },
     "blocked": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "blocked_comments": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "block_reason": {
       "type": "text"
@@ -98,7 +105,8 @@
       "mappedBy": "ticket"
     },
     "zone_code": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "snip_code": {
       "type": "string"

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "log",
     "pluralName": "logs",
-    "displayName": "Log"
+    "displayName": "Log",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -52,7 +53,9 @@
         "INFO",
         "DEBUG",
         "ERROR"
-      ]
+      ],
+      "default": "INFO",
+      "required": true
     },
     "author": {
       "type": "json"

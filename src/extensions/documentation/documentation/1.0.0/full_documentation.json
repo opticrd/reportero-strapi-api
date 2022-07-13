@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-05-30T20:28:49.008Z"
+    "x-generation-date": "2022-07-05T14:12:27.480Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -122,6 +122,10 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "email": {
+                "type": "string",
+                "format": "email"
               }
             }
           }
@@ -163,7 +167,7 @@
                               "attributes": {
                                 "type": "object",
                                 "properties": {
-                                  "Title": {
+                                  "title": {
                                     "type": "string"
                                   },
                                   "services": {
@@ -223,10 +227,13 @@
                                                 "type": {
                                                   "type": "string",
                                                   "enum": [
-                                                    "incident",
+                                                    "service",
                                                     "category",
                                                     "subcategory"
                                                   ]
+                                                },
+                                                "is_active": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -832,7 +839,7 @@
                                                           "vip": {
                                                             "type": "boolean"
                                                           },
-                                                          "user_type": {
+                                                          "user_level": {
                                                             "type": "string",
                                                             "enum": [
                                                               "admin",
@@ -1414,6 +1421,10 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "email": {
+                                                "type": "string",
+                                                "format": "email"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -2355,11 +2366,11 @@
                                     "enum": [
                                       "new",
                                       "open",
-                                      "pending reminder",
+                                      "pending_reminder",
                                       "closed",
                                       "merged",
                                       "removed",
-                                      "pending close"
+                                      "pending_close"
                                     ]
                                   },
                                   "priority": {
@@ -2422,6 +2433,9 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "other_reason": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -2535,6 +2549,10 @@
                         }
                       }
                     },
+                    "email": {
+                      "type": "string",
+                      "format": "email"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -2645,7 +2663,7 @@
                             "attributes": {
                               "type": "object",
                               "properties": {
-                                "Title": {
+                                "title": {
                                   "type": "string"
                                 },
                                 "services": {
@@ -2705,10 +2723,13 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "incident",
+                                                  "service",
                                                   "category",
                                                   "subcategory"
                                                 ]
+                                              },
+                                              "is_active": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -3314,7 +3335,7 @@
                                                         "vip": {
                                                           "type": "boolean"
                                                         },
-                                                        "user_type": {
+                                                        "user_level": {
                                                           "type": "string",
                                                           "enum": [
                                                             "admin",
@@ -3896,6 +3917,10 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "email": {
+                                              "type": "string",
+                                              "format": "email"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -4837,11 +4862,11 @@
                                   "enum": [
                                     "new",
                                     "open",
-                                    "pending reminder",
+                                    "pending_reminder",
                                     "closed",
                                     "merged",
                                     "removed",
-                                    "pending close"
+                                    "pending_close"
                                   ]
                                 },
                                 "priority": {
@@ -4904,6 +4929,9 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "other_reason": {
+                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -5017,6 +5045,10 @@
                       }
                     }
                   },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
                   "createdAt": {
                     "type": "string",
                     "format": "date-time"
@@ -5080,7 +5112,8 @@
         "properties": {
           "data": {
             "required": [
-              "message"
+              "message",
+              "content_type"
             ],
             "type": "object",
             "properties": {
@@ -5165,7 +5198,7 @@
                             "attributes": {
                               "type": "object",
                               "properties": {
-                                "Title": {
+                                "title": {
                                   "type": "string"
                                 },
                                 "services": {
@@ -5225,10 +5258,13 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "incident",
+                                                  "service",
                                                   "category",
                                                   "subcategory"
                                                 ]
+                                              },
+                                              "is_active": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -5834,7 +5870,7 @@
                                                         "vip": {
                                                           "type": "boolean"
                                                         },
-                                                        "user_type": {
+                                                        "user_level": {
                                                           "type": "string",
                                                           "enum": [
                                                             "admin",
@@ -6416,6 +6452,10 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "email": {
+                                              "type": "string",
+                                              "format": "email"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -7357,11 +7397,11 @@
                                   "enum": [
                                     "new",
                                     "open",
-                                    "pending reminder",
+                                    "pending_reminder",
                                     "closed",
                                     "merged",
                                     "removed",
-                                    "pending close"
+                                    "pending_close"
                                   ]
                                 },
                                 "priority": {
@@ -7424,6 +7464,9 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "other_reason": {
+                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -8038,7 +8081,7 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "Title": {
+                              "title": {
                                 "type": "string"
                               },
                               "services": {
@@ -8098,10 +8141,13 @@
                                             "type": {
                                               "type": "string",
                                               "enum": [
-                                                "incident",
+                                                "service",
                                                 "category",
                                                 "subcategory"
                                               ]
+                                            },
+                                            "is_active": {
+                                              "type": "boolean"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -8707,7 +8753,7 @@
                                                       "vip": {
                                                         "type": "boolean"
                                                       },
-                                                      "user_type": {
+                                                      "user_level": {
                                                         "type": "string",
                                                         "enum": [
                                                           "admin",
@@ -9289,6 +9335,10 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "email": {
+                                            "type": "string",
+                                            "format": "email"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -10230,11 +10280,11 @@
                                 "enum": [
                                   "new",
                                   "open",
-                                  "pending reminder",
+                                  "pending_reminder",
                                   "closed",
                                   "merged",
                                   "removed",
-                                  "pending close"
+                                  "pending_close"
                                 ]
                               },
                               "priority": {
@@ -10297,6 +10347,9 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "other_reason": {
+                                              "type": "string"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -11048,10 +11101,13 @@
                                   "type": {
                                     "type": "string",
                                     "enum": [
-                                      "incident",
+                                      "service",
                                       "category",
                                       "subcategory"
                                     ]
+                                  },
+                                  "is_active": {
+                                    "type": "boolean"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -11645,7 +11701,7 @@
                                                       "attributes": {
                                                         "type": "object",
                                                         "properties": {
-                                                          "Title": {
+                                                          "title": {
                                                             "type": "string"
                                                           },
                                                           "services": {
@@ -11725,6 +11781,10 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "email": {
+                                                                        "type": "string",
+                                                                        "format": "email"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -12666,11 +12726,11 @@
                                                             "enum": [
                                                               "new",
                                                               "open",
-                                                              "pending reminder",
+                                                              "pending_reminder",
                                                               "closed",
                                                               "merged",
                                                               "removed",
-                                                              "pending close"
+                                                              "pending_close"
                                                             ]
                                                           },
                                                           "priority": {
@@ -12733,6 +12793,9 @@
                                                                               }
                                                                             }
                                                                           }
+                                                                        },
+                                                                        "other_reason": {
+                                                                          "type": "string"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -12950,7 +13013,7 @@
                                 "vip": {
                                   "type": "boolean"
                                 },
-                                "user_type": {
+                                "user_level": {
                                   "type": "string",
                                   "enum": [
                                     "admin",
@@ -13603,10 +13666,13 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "incident",
+                                    "service",
                                     "category",
                                     "subcategory"
                                   ]
+                                },
+                                "is_active": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -14200,7 +14266,7 @@
                                                     "attributes": {
                                                       "type": "object",
                                                       "properties": {
-                                                        "Title": {
+                                                        "title": {
                                                           "type": "string"
                                                         },
                                                         "services": {
@@ -14280,6 +14346,10 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "email": {
+                                                                      "type": "string",
+                                                                      "format": "email"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -15221,11 +15291,11 @@
                                                           "enum": [
                                                             "new",
                                                             "open",
-                                                            "pending reminder",
+                                                            "pending_reminder",
                                                             "closed",
                                                             "merged",
                                                             "removed",
-                                                            "pending close"
+                                                            "pending_close"
                                                           ]
                                                         },
                                                         "priority": {
@@ -15288,6 +15358,9 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "other_reason": {
+                                                                        "type": "string"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -15505,7 +15578,7 @@
                               "vip": {
                                 "type": "boolean"
                               },
-                              "user_type": {
+                              "user_level": {
                                 "type": "string",
                                 "enum": [
                                   "admin",
@@ -16060,7 +16133,8 @@
             "required": [
               "model",
               "action",
-              "content"
+              "content",
+              "type"
             ],
             "type": "object",
             "properties": {
@@ -16852,7 +16926,9 @@
         ],
         "properties": {
           "data": {
-            "required": [],
+            "required": [
+              "reason"
+            ],
             "type": "object",
             "properties": {
               "content": {
@@ -16878,6 +16954,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "other_reason": {
+                "type": "string"
               }
             }
           }
@@ -16921,7 +17000,7 @@
                             "attributes": {
                               "type": "object",
                               "properties": {
-                                "Title": {
+                                "title": {
                                   "type": "string"
                                 },
                                 "services": {
@@ -16981,10 +17060,13 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "incident",
+                                                  "service",
                                                   "category",
                                                   "subcategory"
                                                 ]
+                                              },
+                                              "is_active": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -17590,7 +17672,7 @@
                                                         "vip": {
                                                           "type": "boolean"
                                                         },
-                                                        "user_type": {
+                                                        "user_level": {
                                                           "type": "string",
                                                           "enum": [
                                                             "admin",
@@ -18172,6 +18254,10 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "email": {
+                                              "type": "string",
+                                              "format": "email"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -19113,11 +19199,11 @@
                                   "enum": [
                                     "new",
                                     "open",
-                                    "pending reminder",
+                                    "pending_reminder",
                                     "closed",
                                     "merged",
                                     "removed",
-                                    "pending close"
+                                    "pending_close"
                                   ]
                                 },
                                 "priority": {
@@ -19180,6 +19266,9 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "other_reason": {
+                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -19291,6 +19380,9 @@
                           }
                         }
                       }
+                    },
+                    "other_reason": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -19404,7 +19496,7 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "Title": {
+                              "title": {
                                 "type": "string"
                               },
                               "services": {
@@ -19464,10 +19556,13 @@
                                             "type": {
                                               "type": "string",
                                               "enum": [
-                                                "incident",
+                                                "service",
                                                 "category",
                                                 "subcategory"
                                               ]
+                                            },
+                                            "is_active": {
+                                              "type": "boolean"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -20073,7 +20168,7 @@
                                                       "vip": {
                                                         "type": "boolean"
                                                       },
-                                                      "user_type": {
+                                                      "user_level": {
                                                         "type": "string",
                                                         "enum": [
                                                           "admin",
@@ -20655,6 +20750,10 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "email": {
+                                            "type": "string",
+                                            "format": "email"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -21596,11 +21695,11 @@
                                 "enum": [
                                   "new",
                                   "open",
-                                  "pending reminder",
+                                  "pending_reminder",
                                   "closed",
                                   "merged",
                                   "removed",
-                                  "pending close"
+                                  "pending_close"
                                 ]
                               },
                               "priority": {
@@ -21663,6 +21762,9 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "other_reason": {
+                                              "type": "string"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -21775,6 +21877,9 @@
                       }
                     }
                   },
+                  "other_reason": {
+                    "type": "string"
+                  },
                   "createdAt": {
                     "type": "string",
                     "format": "date-time"
@@ -21837,7 +21942,9 @@
         ],
         "properties": {
           "data": {
-            "required": [],
+            "required": [
+              "type"
+            ],
             "type": "object",
             "properties": {
               "name": {
@@ -21871,10 +21978,13 @@
               "type": {
                 "type": "string",
                 "enum": [
-                  "incident",
+                  "service",
                   "category",
                   "subcategory"
                 ]
+              },
+              "is_active": {
+                "type": "boolean"
               }
             }
           }
@@ -21951,10 +22061,13 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "incident",
+                                    "service",
                                     "category",
                                     "subcategory"
                                   ]
+                                },
+                                "is_active": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -22282,10 +22395,13 @@
                     "type": {
                       "type": "string",
                       "enum": [
-                        "incident",
+                        "service",
                         "category",
                         "subcategory"
                       ]
+                    },
+                    "is_active": {
+                      "type": "boolean"
                     },
                     "createdAt": {
                       "type": "string",
@@ -22432,10 +22548,13 @@
                               "type": {
                                 "type": "string",
                                 "enum": [
-                                  "incident",
+                                  "service",
                                   "category",
                                   "subcategory"
                                 ]
+                              },
+                              "is_active": {
+                                "type": "boolean"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -22763,10 +22882,13 @@
                   "type": {
                     "type": "string",
                     "enum": [
-                      "incident",
+                      "service",
                       "category",
                       "subcategory"
                     ]
+                  },
+                  "is_active": {
+                    "type": "boolean"
                   },
                   "createdAt": {
                     "type": "string",
@@ -22831,11 +22953,15 @@
         "properties": {
           "data": {
             "required": [
-              "Title"
+              "title",
+              "address",
+              "state",
+              "priority",
+              "zone_code"
             ],
             "type": "object",
             "properties": {
-              "Title": {
+              "title": {
                 "type": "string"
               },
               "services": {
@@ -22924,11 +23050,11 @@
                 "enum": [
                   "new",
                   "open",
-                  "pending reminder",
+                  "pending_reminder",
                   "closed",
                   "merged",
                   "removed",
-                  "pending close"
+                  "pending_close"
                 ]
               },
               "priority": {
@@ -22985,7 +23111,7 @@
                 "attributes": {
                   "type": "object",
                   "properties": {
-                    "Title": {
+                    "title": {
                       "type": "string"
                     },
                     "services": {
@@ -23045,10 +23171,13 @@
                                   "type": {
                                     "type": "string",
                                     "enum": [
-                                      "incident",
+                                      "service",
                                       "category",
                                       "subcategory"
                                     ]
+                                  },
+                                  "is_active": {
+                                    "type": "boolean"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -23642,7 +23771,7 @@
                                                       "attributes": {
                                                         "type": "object",
                                                         "properties": {
-                                                          "Title": {
+                                                          "title": {
                                                             "type": "string"
                                                           },
                                                           "services": {
@@ -23722,6 +23851,10 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "email": {
+                                                                        "type": "string",
+                                                                        "format": "email"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -24663,11 +24796,11 @@
                                                             "enum": [
                                                               "new",
                                                               "open",
-                                                              "pending reminder",
+                                                              "pending_reminder",
                                                               "closed",
                                                               "merged",
                                                               "removed",
-                                                              "pending close"
+                                                              "pending_close"
                                                             ]
                                                           },
                                                           "priority": {
@@ -24730,6 +24863,9 @@
                                                                               }
                                                                             }
                                                                           }
+                                                                        },
+                                                                        "other_reason": {
+                                                                          "type": "string"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -24849,7 +24985,7 @@
                                             "vip": {
                                               "type": "boolean"
                                             },
-                                            "user_type": {
+                                            "user_level": {
                                               "type": "string",
                                               "enum": [
                                                 "admin",
@@ -25829,11 +25965,11 @@
                       "enum": [
                         "new",
                         "open",
-                        "pending reminder",
+                        "pending_reminder",
                         "closed",
                         "merged",
                         "removed",
-                        "pending close"
+                        "pending_close"
                       ]
                     },
                     "priority": {
@@ -25966,7 +26102,7 @@
               "attributes": {
                 "type": "object",
                 "properties": {
-                  "Title": {
+                  "title": {
                     "type": "string"
                   },
                   "services": {
@@ -26026,10 +26162,13 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "incident",
+                                    "service",
                                     "category",
                                     "subcategory"
                                   ]
+                                },
+                                "is_active": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -26623,7 +26762,7 @@
                                                     "attributes": {
                                                       "type": "object",
                                                       "properties": {
-                                                        "Title": {
+                                                        "title": {
                                                           "type": "string"
                                                         },
                                                         "services": {
@@ -26703,6 +26842,10 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "email": {
+                                                                      "type": "string",
+                                                                      "format": "email"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -27644,11 +27787,11 @@
                                                           "enum": [
                                                             "new",
                                                             "open",
-                                                            "pending reminder",
+                                                            "pending_reminder",
                                                             "closed",
                                                             "merged",
                                                             "removed",
-                                                            "pending close"
+                                                            "pending_close"
                                                           ]
                                                         },
                                                         "priority": {
@@ -27711,6 +27854,9 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "other_reason": {
+                                                                        "type": "string"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -27830,7 +27976,7 @@
                                           "vip": {
                                             "type": "boolean"
                                           },
-                                          "user_type": {
+                                          "user_level": {
                                             "type": "string",
                                             "enum": [
                                               "admin",
@@ -28810,11 +28956,11 @@
                     "enum": [
                       "new",
                       "open",
-                      "pending reminder",
+                      "pending_reminder",
                       "closed",
                       "merged",
                       "removed",
-                      "pending close"
+                      "pending_close"
                     ]
                   },
                   "priority": {
@@ -30298,10 +30444,13 @@
                                                                         "type": {
                                                                           "type": "string",
                                                                           "enum": [
-                                                                            "incident",
+                                                                            "service",
                                                                             "category",
                                                                             "subcategory"
                                                                           ]
+                                                                        },
+                                                                        "is_active": {
+                                                                          "type": "boolean"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -30387,7 +30536,7 @@
                                                                     "attributes": {
                                                                       "type": "object",
                                                                       "properties": {
-                                                                        "Title": {
+                                                                        "title": {
                                                                           "type": "string"
                                                                         },
                                                                         "services": {
@@ -30467,6 +30616,10 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "email": {
+                                                                                      "type": "string",
+                                                                                      "format": "email"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -31408,11 +31561,11 @@
                                                                           "enum": [
                                                                             "new",
                                                                             "open",
-                                                                            "pending reminder",
+                                                                            "pending_reminder",
                                                                             "closed",
                                                                             "merged",
                                                                             "removed",
-                                                                            "pending close"
+                                                                            "pending_close"
                                                                           ]
                                                                         },
                                                                         "priority": {
@@ -31475,6 +31628,9 @@
                                                                                             }
                                                                                           }
                                                                                         }
+                                                                                      },
+                                                                                      "other_reason": {
+                                                                                        "type": "string"
                                                                                       },
                                                                                       "createdAt": {
                                                                                         "type": "string",
@@ -31692,7 +31848,7 @@
                                               "vip": {
                                                 "type": "boolean"
                                               },
-                                              "user_type": {
+                                              "user_level": {
                                                 "type": "string",
                                                 "enum": [
                                                   "admin",
@@ -32767,10 +32923,13 @@
                                                                       "type": {
                                                                         "type": "string",
                                                                         "enum": [
-                                                                          "incident",
+                                                                          "service",
                                                                           "category",
                                                                           "subcategory"
                                                                         ]
+                                                                      },
+                                                                      "is_active": {
+                                                                        "type": "boolean"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -32856,7 +33015,7 @@
                                                                   "attributes": {
                                                                     "type": "object",
                                                                     "properties": {
-                                                                      "Title": {
+                                                                      "title": {
                                                                         "type": "string"
                                                                       },
                                                                       "services": {
@@ -32936,6 +33095,10 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "email": {
+                                                                                    "type": "string",
+                                                                                    "format": "email"
                                                                                   },
                                                                                   "createdAt": {
                                                                                     "type": "string",
@@ -33877,11 +34040,11 @@
                                                                         "enum": [
                                                                           "new",
                                                                           "open",
-                                                                          "pending reminder",
+                                                                          "pending_reminder",
                                                                           "closed",
                                                                           "merged",
                                                                           "removed",
-                                                                          "pending close"
+                                                                          "pending_close"
                                                                         ]
                                                                       },
                                                                       "priority": {
@@ -33944,6 +34107,9 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "other_reason": {
+                                                                                      "type": "string"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -34161,7 +34327,7 @@
                                             "vip": {
                                               "type": "boolean"
                                             },
-                                            "user_type": {
+                                            "user_level": {
                                               "type": "string",
                                               "enum": [
                                                 "admin",
@@ -34979,10 +35145,13 @@
                                                                                       "type": {
                                                                                         "type": "string",
                                                                                         "enum": [
-                                                                                          "incident",
+                                                                                          "service",
                                                                                           "category",
                                                                                           "subcategory"
                                                                                         ]
+                                                                                      },
+                                                                                      "is_active": {
+                                                                                        "type": "boolean"
                                                                                       },
                                                                                       "createdAt": {
                                                                                         "type": "string",
@@ -35319,7 +35488,7 @@
                                                                                   "attributes": {
                                                                                     "type": "object",
                                                                                     "properties": {
-                                                                                      "Title": {
+                                                                                      "title": {
                                                                                         "type": "string"
                                                                                       },
                                                                                       "services": {
@@ -35399,6 +35568,10 @@
                                                                                                         }
                                                                                                       }
                                                                                                     }
+                                                                                                  },
+                                                                                                  "email": {
+                                                                                                    "type": "string",
+                                                                                                    "format": "email"
                                                                                                   },
                                                                                                   "createdAt": {
                                                                                                     "type": "string",
@@ -36340,11 +36513,11 @@
                                                                                         "enum": [
                                                                                           "new",
                                                                                           "open",
-                                                                                          "pending reminder",
+                                                                                          "pending_reminder",
                                                                                           "closed",
                                                                                           "merged",
                                                                                           "removed",
-                                                                                          "pending close"
+                                                                                          "pending_close"
                                                                                         ]
                                                                                       },
                                                                                       "priority": {
@@ -36407,6 +36580,9 @@
                                                                                                           }
                                                                                                         }
                                                                                                       }
+                                                                                                    },
+                                                                                                    "other_reason": {
+                                                                                                      "type": "string"
                                                                                                     },
                                                                                                     "createdAt": {
                                                                                                       "type": "string",
@@ -36624,7 +36800,7 @@
                                                             "vip": {
                                                               "type": "boolean"
                                                             },
-                                                            "user_type": {
+                                                            "user_level": {
                                                               "type": "string",
                                                               "enum": [
                                                                 "admin",
@@ -37477,10 +37653,13 @@
                                                                                     "type": {
                                                                                       "type": "string",
                                                                                       "enum": [
-                                                                                        "incident",
+                                                                                        "service",
                                                                                         "category",
                                                                                         "subcategory"
                                                                                       ]
+                                                                                    },
+                                                                                    "is_active": {
+                                                                                      "type": "boolean"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -37817,7 +37996,7 @@
                                                                                 "attributes": {
                                                                                   "type": "object",
                                                                                   "properties": {
-                                                                                    "Title": {
+                                                                                    "title": {
                                                                                       "type": "string"
                                                                                     },
                                                                                     "services": {
@@ -37897,6 +38076,10 @@
                                                                                                       }
                                                                                                     }
                                                                                                   }
+                                                                                                },
+                                                                                                "email": {
+                                                                                                  "type": "string",
+                                                                                                  "format": "email"
                                                                                                 },
                                                                                                 "createdAt": {
                                                                                                   "type": "string",
@@ -38838,11 +39021,11 @@
                                                                                       "enum": [
                                                                                         "new",
                                                                                         "open",
-                                                                                        "pending reminder",
+                                                                                        "pending_reminder",
                                                                                         "closed",
                                                                                         "merged",
                                                                                         "removed",
-                                                                                        "pending close"
+                                                                                        "pending_close"
                                                                                       ]
                                                                                     },
                                                                                     "priority": {
@@ -38905,6 +39088,9 @@
                                                                                                         }
                                                                                                       }
                                                                                                     }
+                                                                                                  },
+                                                                                                  "other_reason": {
+                                                                                                    "type": "string"
                                                                                                   },
                                                                                                   "createdAt": {
                                                                                                     "type": "string",
@@ -39122,7 +39308,7 @@
                                                           "vip": {
                                                             "type": "boolean"
                                                           },
-                                                          "user_type": {
+                                                          "user_level": {
                                                             "type": "string",
                                                             "enum": [
                                                               "admin",
@@ -39745,7 +39931,9 @@
             "required": [
               "username",
               "email",
+              "user_level",
               "firstname",
+              "zone_code",
               "cedula"
             ],
             "type": "object",
@@ -39819,7 +40007,7 @@
               "vip": {
                 "type": "boolean"
               },
-              "user_type": {
+              "user_level": {
                 "type": "string",
                 "enum": [
                   "admin",
@@ -40391,10 +40579,13 @@
                                                                         "type": {
                                                                           "type": "string",
                                                                           "enum": [
-                                                                            "incident",
+                                                                            "service",
                                                                             "category",
                                                                             "subcategory"
                                                                           ]
+                                                                        },
+                                                                        "is_active": {
+                                                                          "type": "boolean"
                                                                         },
                                                                         "createdAt": {
                                                                           "type": "string",
@@ -40480,7 +40671,7 @@
                                                                     "attributes": {
                                                                       "type": "object",
                                                                       "properties": {
-                                                                        "Title": {
+                                                                        "title": {
                                                                           "type": "string"
                                                                         },
                                                                         "services": {
@@ -40560,6 +40751,10 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "email": {
+                                                                                      "type": "string",
+                                                                                      "format": "email"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -41501,11 +41696,11 @@
                                                                           "enum": [
                                                                             "new",
                                                                             "open",
-                                                                            "pending reminder",
+                                                                            "pending_reminder",
                                                                             "closed",
                                                                             "merged",
                                                                             "removed",
-                                                                            "pending close"
+                                                                            "pending_close"
                                                                           ]
                                                                         },
                                                                         "priority": {
@@ -41568,6 +41763,9 @@
                                                                                             }
                                                                                           }
                                                                                         }
+                                                                                      },
+                                                                                      "other_reason": {
+                                                                                        "type": "string"
                                                                                       },
                                                                                       "createdAt": {
                                                                                         "type": "string",
@@ -41785,7 +41983,7 @@
                                               "vip": {
                                                 "type": "boolean"
                                               },
-                                              "user_type": {
+                                              "user_level": {
                                                 "type": "string",
                                                 "enum": [
                                                   "admin",
@@ -42321,7 +42519,7 @@
                     "vip": {
                       "type": "boolean"
                     },
-                    "user_type": {
+                    "user_level": {
                       "type": "string",
                       "enum": [
                         "admin",
@@ -43318,10 +43516,13 @@
                                                                       "type": {
                                                                         "type": "string",
                                                                         "enum": [
-                                                                          "incident",
+                                                                          "service",
                                                                           "category",
                                                                           "subcategory"
                                                                         ]
+                                                                      },
+                                                                      "is_active": {
+                                                                        "type": "boolean"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -43407,7 +43608,7 @@
                                                                   "attributes": {
                                                                     "type": "object",
                                                                     "properties": {
-                                                                      "Title": {
+                                                                      "title": {
                                                                         "type": "string"
                                                                       },
                                                                       "services": {
@@ -43487,6 +43688,10 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "email": {
+                                                                                    "type": "string",
+                                                                                    "format": "email"
                                                                                   },
                                                                                   "createdAt": {
                                                                                     "type": "string",
@@ -44428,11 +44633,11 @@
                                                                         "enum": [
                                                                           "new",
                                                                           "open",
-                                                                          "pending reminder",
+                                                                          "pending_reminder",
                                                                           "closed",
                                                                           "merged",
                                                                           "removed",
-                                                                          "pending close"
+                                                                          "pending_close"
                                                                         ]
                                                                       },
                                                                       "priority": {
@@ -44495,6 +44700,9 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "other_reason": {
+                                                                                      "type": "string"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -44712,7 +44920,7 @@
                                             "vip": {
                                               "type": "boolean"
                                             },
-                                            "user_type": {
+                                            "user_level": {
                                               "type": "string",
                                               "enum": [
                                                 "admin",
@@ -45248,7 +45456,7 @@
                   "vip": {
                     "type": "boolean"
                   },
-                  "user_type": {
+                  "user_level": {
                     "type": "string",
                     "enum": [
                       "admin",
@@ -50653,6 +50861,87 @@
           }
         ],
         "operationId": "delete/users/{id}"
+      }
+    },
+    "/users/import": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsersPermissionsUserResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Users-permissions - User"
+        ],
+        "parameters": [],
+        "operationId": "post/users/import",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersPermissionsUserRequest"
+              }
+            }
+          }
+        }
       }
     }
   }

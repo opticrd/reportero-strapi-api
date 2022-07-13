@@ -4,7 +4,8 @@
   "info": {
     "singularName": "beneficiary",
     "pluralName": "beneficiaries",
-    "displayName": "Beneficiary"
+    "displayName": "Beneficiary",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,7 +19,8 @@
     "cedula": {
       "type": "string",
       "required": true,
-      "maxLength": 11
+      "maxLength": 11,
+      "unique": true
     },
     "phone": {
       "type": "string",
@@ -29,6 +31,9 @@
       "relation": "oneToMany",
       "target": "api::ticket.ticket",
       "mappedBy": "beneficiary"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
