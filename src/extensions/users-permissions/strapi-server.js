@@ -2,7 +2,7 @@
 
 //module.exports = require('./server');
 
-
+const jwt_decode = require("jwt-decode");
 const utils = require("@strapi/utils");
 const { sanitize } = require('@strapi/utils');
 const { ForbiddenError, ValidationError } = utils.errors;
@@ -78,6 +78,12 @@ module.exports = (plugin) =>
 
     plugin.controllers.auth.refreshToken = async (ctx) => 
     {
+        if (!ctx.request.body.token) {
+            return ctx.badRequest('Token is missing', { error: 'Your are missing the token.'});
+        }
+        
+        const { id } = jwt_decode(ctx.request.body.token);         
+
         // refresh userself token (basic)
         // const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
         //   id: ctx.state.user.id
@@ -92,13 +98,14 @@ module.exports = (plugin) =>
         // })
         // return {jwt: newJwt}
 
+        //console.log('header.authorization: ' + ctx.request.header.authorization);
         // refresh userself token with verification
         const payload = await strapi.plugins['users-permissions'].services.jwt.verify(ctx.request.body.token)
             .catch(error => { 
                 //console.log('error: ' + error.message);
-                //console.log('id: ' + ctx.state.user.id);
+                //console.log('id: ' + ctx.state.user.id); // for authenticated request
                 return {jwt: strapi.plugins['users-permissions'].services.jwt.issue({
-                    id: ctx.state.user.id
+                    id: id
                 })}
             });
 
