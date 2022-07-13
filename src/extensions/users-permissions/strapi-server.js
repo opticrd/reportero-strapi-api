@@ -84,21 +84,6 @@ module.exports = (plugin) =>
         
         const { id } = jwt_decode(ctx.request.body.token);         
 
-        // refresh userself token (basic)
-        // const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
-        //   id: ctx.state.user.id
-        // })
-        // return { jwt: newJwt }
-    
-        // comment out next lines, and refresh the request body's token like {token: 'xxx'}
-        // const { token } = ctx.request.body
-        // const payload = strapi.plugins['users-permissions'].services.jwt.verify(token)
-        // const newJwt = strapi.plugins['users-permissions'].services.jwt.issue({
-        // 	id: payload.id
-        // })
-        // return {jwt: newJwt}
-
-        //console.log('header.authorization: ' + ctx.request.header.authorization);
         // refresh userself token with verification
         const payload = await strapi.plugins['users-permissions'].services.jwt.verify(ctx.request.body.token)
             .catch(error => { 
@@ -110,7 +95,6 @@ module.exports = (plugin) =>
             });
 
 		//console.log(payload);
-
         if (typeof payload.jwt === 'undefined') {
             payload.jwt = ctx.request.body.token;
         }
